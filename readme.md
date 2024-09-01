@@ -58,22 +58,6 @@ A scatter plot shows that lower **water** values correlate with higher **strengt
 #### Relationship between Age and Strength
 A scatter plot shows that higher **age** values correlate with higher **strength** values, indicating that concrete hardens and reaches maximum strength after several weeks.
 
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/big-data-computation.git
-   cd big-data-computation
-   ```
-
-2. Open the project in Google Colab or Jupyter Notebook:
-   - For Google Colab, upload the notebook file.
-   - For Jupyter Notebook, run:
-     ```bash
-     jupyter notebook
-     ```
-
-3. Follow the instructions in the notebook to perform the data analysis.
-
 ---
 
 GUNADARMA UNIVERSITY - 2023
