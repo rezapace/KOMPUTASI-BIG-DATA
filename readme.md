@@ -60,4 +60,4 @@ A scatter plot shows that higher **age** values correlate with higher **strength
 
 ---
 
-GUNADARMA UNIVERSITY - 2023
+GUNADARMA UNIVERSITY - 2023 X Webkumal
