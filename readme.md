@@ -1,56 +1,79 @@
-#akan mempelajari penggunaan python pada KOMPUTASI BIG DATA
+# Big Data Computation with Python
 
-# Praktikum KOMPUTASI BIG DATA
+## Description
+This repository contains materials and practical exercises for learning Python in the context of Big Data Computation. The focus is on analyzing and processing large datasets using various tools and techniques.
 
-tugas komputasi big data
+## Table of Contents
+- [Overview](#overview)
+- [Tools and Resources](#tools-and-resources)
+- [Dataset Analysis](#dataset-analysis)
+  - [Dataset Overview](#dataset-overview)
+  - [Univariate Analysis](#univariate-analysis)
+  - [Bivariate Analysis](#bivariate-analysis)
+- [How to Run](#how-to-run)
 
-GUNADARMA UNIVERSITY - 2023
-KOMPUTASI BIG DATA
+## Overview
+This project is part of the Big Data Computation course at Gunadarma University, 2023. It includes practical exercises and analysis of a concrete component dataset.
 
-- [x] [GOOGLE COLAB](https://colab.research.google.com/)
-- [x] [JUPYTER NOTEBOOK](https://jupyter.org/try)
-- [x] [hypercomputation gunadarma](https://hypercomputation-hub.gunadarma.ac.id/)
-- [x] [webkumal KOMPUTASI BIG DATA](https://webkumal.com/tag/komputasi-big-data/)
+## Tools and Resources
+- [GOOGLE COLAB](https://colab.research.google.com/)
+- [JUPYTER NOTEBOOK](https://jupyter.org/try)
+- [Hypercomputation Gunadarma](https://hypercomputation-hub.gunadarma.ac.id/)
+- [Webkumal Big Data Computation](https://webkumal.com/tag/komputasi-big-data/)
 
+## Dataset Analysis
 
+### Dataset Overview
+The dataset "Data Komponen Beton" includes the following categories:
 
-## Analisis Data Set "Data Komponen Beton"
-
-## Overview Dataset
-"Data Komponen Beton".
-
-Data set ini berisikan beberapa kategori sebagai berikut
-
-1. **cement (kg)**: Jumlah semen dalam satu meter kubik campuran beton.
-2. **slag (blast furnace slag, kg)**: Jumlah campuran slag dalam satu meter kubik campuran beton.
-3. **ash (fly ash, kg)**: Jumlah abu terbang dalam satu meter kubik campuran beton.
-4. **water (kg)**: Jumlah air dalam satu meter kubik campuran beton.
-5. **superplastic (superplasticizer, kg)**: Jumlah superplastikizer dalam satu meter kubik campuran beton.
-6. **coarseagg (coarse aggregate, kg)**: Jumlah agregat kasar dalam satu meter kubik campuran beton.
-7. **fineagg (fine aggregate, kg)**: Jumlah agregat halus dalam satu meter kubik campuran beton.
-8. **age (days, 1-365)**: Usia dalam hari pada waktu uji kekuatan beton.
-9. **strength (Concrete compressive strength, MPa)**: Kekuatan tekan beton dalam satuan Megapascal.
-
-## Univariate and Bivariate Analysis
+1. **Cement (kg)**: Amount of cement in one cubic meter of concrete mix.
+2. **Slag (blast furnace slag, kg)**: Amount of slag in one cubic meter of concrete mix.
+3. **Ash (fly ash, kg)**: Amount of fly ash in one cubic meter of concrete mix.
+4. **Water (kg)**: Amount of water in one cubic meter of concrete mix.
+5. **Superplastic (superplasticizer, kg)**: Amount of superplasticizer in one cubic meter of concrete mix.
+6. **Coarseagg (coarse aggregate, kg)**: Amount of coarse aggregate in one cubic meter of concrete mix.
+7. **Fineagg (fine aggregate, kg)**: Amount of fine aggregate in one cubic meter of concrete mix.
+8. **Age (days, 1-365)**: Age in days at the time of concrete strength testing.
+9. **Strength (Concrete compressive strength, MPa)**: Compressive strength of concrete in Megapascals.
 
 ### Univariate Analysis
-1. Kolom **cement** memiliki rata-rata sebesar 281.17 dan standar deviasi sebesar 104.51.
-2. Kolom **slag** memiliki rata-rata sebesar 73.89 dan standar deviasi sebesar 86.30.
-3. Kolom **ash** memiliki rata-rata sebesar 54.19 dan standar deviasi sebesar 63.99.
-4. Kolom **water** memiliki rata-rata sebesar 181.57 dan standar deviasi sebesar 21.35.
-5. Kolom **superplastic** memiliki rata-rata sebesar 6.20 dan standar deviasi sebesar 5.97.
-6. Kolom **coarseagg** memiliki rata-rata sebesar 972.92 dan standar deviasi sebesar 77.75.
-7. Kolom **fineagg** memiliki rata-rata sebesar 773.58 dan standar deviasi sebesar 80.18.
-8. Kolom **age** memiliki rata-rata sebesar 45.66 dan standar deviasi sebesar 63.17.
-9. Kolom **strength** memiliki rata-rata sebesar 35.82 dan standar deviasi sebesar 16.71.
+1. **Cement**: Mean = 281.17, Std Dev = 104.51
+2. **Slag**: Mean = 73.89, Std Dev = 86.30
+3. **Ash**: Mean = 54.19, Std Dev = 63.99
+4. **Water**: Mean = 181.57, Std Dev = 21.35
+5. **Superplastic**: Mean = 6.20, Std Dev = 5.97
+6. **Coarseagg**: Mean = 972.92, Std Dev = 77.75
+7. **Fineagg**: Mean = 773.58, Std Dev = 80.18
+8. **Age**: Mean = 45.66, Std Dev = 63.17
+9. **Strength**: Mean = 35.82, Std Dev = 16.71
 
 ### Bivariate Analysis
 
-#### Hubungan antara kolom cement dan strength
-Dari scatter plot yang dihasilkan, terlihat bahwa semakin tinggi nilai kolom **cement**, semakin tinggi pula nilai kolom **strength**. Hal ini menunjukkan kekuatan beton sangat dipengaruhi oleh jumlah semen yang digunakan pada campuran beton.
+#### Relationship between Cement and Strength
+A scatter plot shows that higher **cement** values correlate with higher **strength** values, indicating that concrete strength is significantly influenced by the amount of cement used.
 
-#### Hubungan antara kolom water dan strength
-Dari scatter plot yang dihasilkan, terlihat bahwa semakin rendah nilai kolom **water**, semakin tinggi pula nilai kolom **strength**. Hal ini menunjukkan kekuatan beton sangat dipengaruhi oleh jumlah air yang digunakan pada campuran beton.
+#### Relationship between Water and Strength
+A scatter plot shows that lower **water** values correlate with higher **strength** values, indicating that concrete strength is significantly influenced by the amount of water used.
 
-#### Hubungan antara kolom age dan strength
-Dari scatter plot yang dihasilkan, terlihat bahwa semakin tinggi nilai kolom **age**, semakin tinggi pula nilai kolom **strength**. Hal ini menunjukkan beton akan semakin mengeras, dan akhirnya mencapai kekuatan maksimal setelah beberapa minggu.
+#### Relationship between Age and Strength
+A scatter plot shows that higher **age** values correlate with higher **strength** values, indicating that concrete hardens and reaches maximum strength after several weeks.
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/big-data-computation.git
+   cd big-data-computation
+   ```
+
+2. Open the project in Google Colab or Jupyter Notebook:
+   - For Google Colab, upload the notebook file.
+   - For Jupyter Notebook, run:
+     ```bash
+     jupyter notebook
+     ```
+
+3. Follow the instructions in the notebook to perform the data analysis.
+
+---
+
+GUNADARMA UNIVERSITY - 2023
